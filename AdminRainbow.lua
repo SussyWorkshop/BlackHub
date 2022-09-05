@@ -20,9 +20,30 @@ local CreditTab = Window:MakeTab({
 })
 
 AdminTab:AddButton({
-    name = "Fate Admin",
+    Name = "Fate Admin",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/SussyWorkshop/BlackHub/main/FateAdmin.lua"))();
+    end
+})
+
+AdminTab:AddButton({
+    Name = "Infinite Yield",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/SussyWorkshop/BlackHub/main/InfiniteYield.lua"))()
+    end
+})
+
+AdminTab:AddButton({
+    Name = "Raviz Admin",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/SussyWorkshop/BlackHub/main/RevizAdmin.lua"))()
+    end
+})
+
+AdminTab:AddButton({
+    Name = "CMD-X",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/SussyWorkshop/BlackHub/main/CMDX.lua"))()
     end
 })
 
